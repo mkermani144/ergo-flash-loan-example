@@ -1,0 +1,29 @@
+{
+  "name": "ergo-flash-dex",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "node --loader ts-node/esm src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@9.6.0",
+  "dependencies": {
+    "@fleet-sdk/common": "^0.8.0",
+    "@fleet-sdk/compiler": "^0.8.2",
+    "@fleet-sdk/core": "^0.8.2",
+    "@fleet-sdk/wallet": "^0.8.2",
+    "dotenv": "^16.5.0",
+    "ts-results-es": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
