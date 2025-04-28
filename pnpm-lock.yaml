@@ -9,17 +9,20 @@ importers:
   .:
     dependencies:
       '@fleet-sdk/common':
-        specifier: ^0.8.0
-        version: 0.8.0
+        specifier: ^0.8.3
+        version: 0.8.3
       '@fleet-sdk/compiler':
-        specifier: ^0.8.2
-        version: 0.8.2
+        specifier: ^0.8.3
+        version: 0.8.3
       '@fleet-sdk/core':
-        specifier: ^0.8.2
-        version: 0.8.2
+        specifier: ^0.8.3
+        version: 0.8.3
+      '@fleet-sdk/mock-chain':
+        specifier: ^0.8.3
+        version: 0.8.3
       '@fleet-sdk/wallet':
-        specifier: ^0.8.2
-        version: 0.8.2
+        specifier: ^0.8.3
+        version: 0.8.3
       dotenv:
         specifier: ^16.5.0
         version: 16.5.0
@@ -47,28 +50,32 @@ packages:
     resolution: {integrity: sha512-gYEkHhgGpgIcmCL3nCw8E9zHkT2WLmR+mPdxFlUE6fwcwISURbJrP6W9mF7D5Y0ShAP5Is2w3edh7AyIc7ctIQ==}
     engines: {node: '>=14'}
 
-  '@fleet-sdk/common@0.8.0':
-    resolution: {integrity: sha512-Fv4NqkoqnfysKTLlXKIVnuojXL76Yac7pXFDFxhK4Mw+R5ARm8e/wzs50nSB426uxvnCOTQQgdgTOvxbwHHp0Q==}
+  '@fleet-sdk/common@0.8.3':
+    resolution: {integrity: sha512-KyC+NjtIJC4BY+jtCP057QVFXY0cgQg9lM5v8ZWAPbYUHeCTWu6MXsgmhiBS+8uKhyH5D37JXlRdhnQ4/yAPUA==}
     engines: {node: '>=18'}
 
-  '@fleet-sdk/compiler@0.8.2':
-    resolution: {integrity: sha512-73uRFqupItgXsnySInKupiwpVXIEuF88k24q3C8eAdLTIoquY+OLB+OMPbHMBY9tFHAzstd8aIZzJbsKECyrkQ==}
+  '@fleet-sdk/compiler@0.8.3':
+    resolution: {integrity: sha512-9t46JfmicVmt1/EPl4yXoOmxGZOKZHNJ6UR/I1myTDKmDq8oooLPeOrx/9nqe8BopgikcQBGaLHvGw8vuhsPLw==}
     engines: {node: '>=18'}
 
-  '@fleet-sdk/core@0.8.2':
-    resolution: {integrity: sha512-cGtjyyD/PVjKqHL5/PpyUbKoQqajLeHavTJinqbX9XbbvwBOdp8xcBvzFRbYnrDPGjGd7lBnUwhXsMb+3+3TPw==}
+  '@fleet-sdk/core@0.8.3':
+    resolution: {integrity: sha512-hodX2GAsOPKs+niDREr+1ARM2H2OYXoLT6C0L4nCZ93jYybNhQvTxgUnZemk5d5V/zkA1zzlVhhNez2scRsWbA==}
     engines: {node: '>=18'}
 
-  '@fleet-sdk/crypto@0.8.2':
-    resolution: {integrity: sha512-xTiTSfe78vCeWBVC5ZWNx14EGyBj1NNdP9Jm6Lh+yINElvTaz5MBK8ywjT+U6OPPYQxfnqW+d4WQ9S5JRsExvQ==}
+  '@fleet-sdk/crypto@0.8.3':
+    resolution: {integrity: sha512-6iWDKCbiFg+6yr6GiQeHpPEMukgthQCSwOvS93anJ8AOTbPsu9kUVetCwkz0LcPUPIKerTTfDIcLcif0bO9+Jg==}
     engines: {node: '>=18'}
 
-  '@fleet-sdk/serializer@0.8.2':
-    resolution: {integrity: sha512-T6X6u37GOfqpWUaeqwhYEM2TpZt/11jwO7RjLygovz3yo6coZFlH8F6ZXc/BjLt1jZTm4EHsSQ7Lt98ONH5rEw==}
+  '@fleet-sdk/mock-chain@0.8.3':
+    resolution: {integrity: sha512-08ulVXFDU/2Xd4mwjWazPfLlCz3N+56RFZyC50GEzH9KBWPCvGz+67bJX2U8fhORXTPilrMxca4IDFBlzTY30A==}
+    engines: {node: '>=10'}
+
+  '@fleet-sdk/serializer@0.8.3':
+    resolution: {integrity: sha512-IePh1EbQc0dQp/d103p+hwkVbUSs9pP19AngMxFqQSsMtHSXKX8q2C3NFe8fHR6g4ckrFpsPykWXKzZ6dw+wEg==}
     engines: {node: '>=18'}
 
-  '@fleet-sdk/wallet@0.8.2':
-    resolution: {integrity: sha512-+ICQ0I2curl5QpPfIUqkJWcdMicWt8a9gJ53g21ZjfuuVzXvmNDiOgScXA7qCF233rMY0HhsdAC8vmxnALI4Yw==}
+  '@fleet-sdk/wallet@0.8.3':
+    resolution: {integrity: sha512-4S2zjpovIYEnxX1xFhoDtwabn3JFneut/2Gzk6p2yR+G4zXw41aK3967KnR5thBIyQeGgqcrGK35qP3l6PGIsA==}
     engines: {node: '>=18'}
 
   '@jridgewell/resolve-uri@3.1.2':
@@ -85,11 +92,19 @@ packages:
     resolution: {integrity: sha512-warwspo+UYUPep0Q+vtdVB4Ugn8GGQj8iyB3gnRWsztmUHTI3S1nhdiWNsPUGL0vud7JlRRk1XEu7Lq1KGTnMQ==}
     engines: {node: ^14.21.3 || >=16}
 
+  '@noble/curves@1.9.0':
+    resolution: {integrity: sha512-7YDlXiNMdO1YZeH6t/kvopHHbIZzlxrCV9WLqCY6QhcXOoXiNCMDqJIglZ9Yjx5+w7Dz30TITFrlTjnRg7sKEg==}
+    engines: {node: ^14.21.3 || >=16}
+
   '@noble/hashes@1.1.4':
     resolution: {integrity: sha512-+PYsVPrTSqtVjatKt2A/Proukn2Yrz61OBThOCKErc5w2/r1Fh37vbDv0Eah7pyNltrmacjwTvdw3JoR+WE4TA==}
 
   '@noble/hashes@1.7.1':
     resolution: {integrity: sha512-B8XBPsn4vT/KJAGqDzbwztd+6Yte3P4V7iafm24bxgDe/mlRuK6xmWPuCNrKt2vDafZ8MfJLlchDG/vYafQEjQ==}
+    engines: {node: ^14.21.3 || >=16}
+
+  '@noble/hashes@1.8.0':
+    resolution: {integrity: sha512-jCs9ldd7NwzpgXDIf6P3+NrHh9/sD6CQdxHyjQI+h/6rDNo88ypBxxz45UDuZHz9r3tNz7N/VInSVoVdtXEI4A==}
     engines: {node: ^14.21.3 || >=16}
 
   '@scure/base@1.2.4':
@@ -135,12 +150,19 @@ packages:
     resolution: {integrity: sha512-58lmxKSA4BNyLz+HHMUzlOEpg09FV+ev6ZMe3vJihgdxzgcwZ8VoEEPmALCZG9LmqfVoNMMKpttIYTVG6uDY7A==}
     engines: {node: '>=0.3.1'}
 
+  diff@7.0.0:
+    resolution: {integrity: sha512-PJWHUb1RFevKCwaFA9RlG5tCd+FO5iRh9A8HEtkmBH2Li03iJriB6m6JIN4rGz3K3JLawI7/veA1xzRKP6ISBw==}
+    engines: {node: '>=0.3.1'}
+
   dotenv@16.5.0:
     resolution: {integrity: sha512-m/C+AwOAr9/W1UOIZUo232ejMNnJAJtYQjUbHoNTBNTJSvqzzDh7vnrei3o3r3m9blf6ZoDkvcw0VmozNRFJxg==}
     engines: {node: '>=12'}
 
   make-error@1.3.6:
     resolution: {integrity: sha512-s8UhlNe7vPKomQhC1qFelMokr/Sc3AgNbso3n74mVPA5LTZwkB9NlXf4XPamLxJE8h0gh73rM94xvwRT2CVInw==}
+
+  picocolors@1.1.1:
+    resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
 
   sigmajs-crypto-facade@0.0.7:
     resolution: {integrity: sha512-4XK8ZS9NKAbo8aGnU6o5GkBW6Upl8+OK8A1KreVDMAamfvZ0iq4LoVH8rHaeEPf9moVtaC4QZY5RYI+0OwiydA==}
@@ -189,40 +211,51 @@ snapshots:
 
   '@fleet-sdk/common@0.1.3': {}
 
-  '@fleet-sdk/common@0.8.0': {}
+  '@fleet-sdk/common@0.8.3': {}
 
-  '@fleet-sdk/compiler@0.8.2':
+  '@fleet-sdk/compiler@0.8.3':
     dependencies:
-      '@fleet-sdk/common': 0.8.0
-      '@fleet-sdk/core': 0.8.2
-      '@fleet-sdk/crypto': 0.8.2
-      '@fleet-sdk/serializer': 0.8.2
+      '@fleet-sdk/common': 0.8.3
+      '@fleet-sdk/core': 0.8.3
+      '@fleet-sdk/crypto': 0.8.3
+      '@fleet-sdk/serializer': 0.8.3
       sigmastate-js: 0.4.6
 
-  '@fleet-sdk/core@0.8.2':
+  '@fleet-sdk/core@0.8.3':
     dependencies:
-      '@fleet-sdk/common': 0.8.0
-      '@fleet-sdk/crypto': 0.8.2
-      '@fleet-sdk/serializer': 0.8.2
+      '@fleet-sdk/common': 0.8.3
+      '@fleet-sdk/crypto': 0.8.3
+      '@fleet-sdk/serializer': 0.8.3
 
-  '@fleet-sdk/crypto@0.8.2':
+  '@fleet-sdk/crypto@0.8.3':
     dependencies:
-      '@fleet-sdk/common': 0.8.0
-      '@noble/hashes': 1.7.1
+      '@fleet-sdk/common': 0.8.3
+      '@noble/hashes': 1.8.0
       '@scure/base': 1.2.4
 
-  '@fleet-sdk/serializer@0.8.2':
+  '@fleet-sdk/mock-chain@0.8.3':
     dependencies:
-      '@fleet-sdk/common': 0.8.0
-      '@fleet-sdk/crypto': 0.8.2
+      '@fleet-sdk/common': 0.8.3
+      '@fleet-sdk/core': 0.8.3
+      '@fleet-sdk/crypto': 0.8.3
+      '@fleet-sdk/serializer': 0.8.3
+      '@fleet-sdk/wallet': 0.8.3
+      diff: 7.0.0
+      picocolors: 1.1.1
+      sigmastate-js: 0.4.6
 
-  '@fleet-sdk/wallet@0.8.2':
+  '@fleet-sdk/serializer@0.8.3':
     dependencies:
-      '@fleet-sdk/common': 0.8.0
-      '@fleet-sdk/core': 0.8.2
-      '@fleet-sdk/crypto': 0.8.2
-      '@fleet-sdk/serializer': 0.8.2
-      '@noble/curves': 1.8.1
+      '@fleet-sdk/common': 0.8.3
+      '@fleet-sdk/crypto': 0.8.3
+
+  '@fleet-sdk/wallet@0.8.3':
+    dependencies:
+      '@fleet-sdk/common': 0.8.3
+      '@fleet-sdk/core': 0.8.3
+      '@fleet-sdk/crypto': 0.8.3
+      '@fleet-sdk/serializer': 0.8.3
+      '@noble/curves': 1.9.0
       '@scure/bip32': 1.6.2
       '@scure/bip39': 1.5.4
 
@@ -239,9 +272,15 @@ snapshots:
     dependencies:
       '@noble/hashes': 1.7.1
 
+  '@noble/curves@1.9.0':
+    dependencies:
+      '@noble/hashes': 1.8.0
+
   '@noble/hashes@1.1.4': {}
 
   '@noble/hashes@1.7.1': {}
+
+  '@noble/hashes@1.8.0': {}
 
   '@scure/base@1.2.4': {}
 
@@ -280,13 +319,17 @@ snapshots:
 
   diff@4.0.2: {}
 
+  diff@7.0.0: {}
+
   dotenv@16.5.0: {}
 
   make-error@1.3.6: {}
 
+  picocolors@1.1.1: {}
+
   sigmajs-crypto-facade@0.0.7:
     dependencies:
-      '@noble/hashes': 1.1.4
+      '@noble/hashes': 1.7.1
 
   sigmastate-js@0.4.6:
     dependencies:

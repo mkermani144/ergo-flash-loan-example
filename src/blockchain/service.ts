@@ -115,22 +115,16 @@ export const signTransaction = async (
 export const buildTransaction = async (
   fromBoxes: ReturnType<typeof toSelectorFriendlyErgoBox>[],
   toOutputs: OutputBuilder[],
-  changeAddress: string
+  changeAddress: string,
+  height: number
 ): Promise<Result<ErgoUnsignedTransaction, Error>> => {
   try {
-    const latestBlockHeightResult = await fetchLatestBlockHeight();
-    if (latestBlockHeightResult.isErr()) {
-      return Err(latestBlockHeightResult.error);
-    }
-    const latestBlockHeight = latestBlockHeightResult.value;
-
-    const txBuilder = new TransactionBuilder(latestBlockHeight)
+    const unsignedTx = new TransactionBuilder(height)
       .from(fromBoxes)
       .to(toOutputs)
       .payMinFee()
-      .sendChangeTo(changeAddress);
-
-    const unsignedTx = txBuilder.build();
+      .sendChangeTo(changeAddress)
+      .build();
 
     return Ok(unsignedTx);
   } catch (error) {
